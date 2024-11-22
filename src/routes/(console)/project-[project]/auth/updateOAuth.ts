@@ -27,7 +27,7 @@ export async function updateOAuth({
     enabled
 }: Args): Promise<Return> {
     try {
-        if (!isValueOfStringEnum(OAuthProvider, provider.key)) {
+        if (!isValueOfStringEnum(OAuthProvider, provider.key) && provider.key !== 'wechat') {
             throw new Error(`Invalid OAuth2 provider: ${provider.key}`);
         }
         await sdk.forConsole.projects.updateOAuth2(

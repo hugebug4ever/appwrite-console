@@ -209,6 +209,12 @@ export const oAuthProviders: Record<string, Provider> = {
         docs: 'https://dev.twitch.tv/docs/auth',
         component: Main
     },
+    wechat: {
+        name: 'Wechat',
+        icon: 'wechat',
+        docs: 'https://developers.weixin.qq.com/doc/oplatform/Mobile_App/WeChat_Login/Development_Guide.html',
+        component: Main
+    },
     wordpress: {
         name: 'Wordpress',
         icon: 'wordpress',
